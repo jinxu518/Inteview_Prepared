@@ -16,7 +16,6 @@ public class RansomNote {
         }
         int co=rMap.size();
         for(char c : m.toCharArray()){
-
             if(rMap.containsKey(c)){
                 rMap.put(c,rMap.get(c)-1);
                 if(rMap.get(c)==0) {
