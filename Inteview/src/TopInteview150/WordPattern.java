@@ -18,7 +18,6 @@ public class WordPattern {
         for (int i = 0; i < pattern.length(); i++) {
             char pChar = pattern.charAt(i);
             String word = words[i];
-            // Check if there's a conflict in the mapping from pattern to word
             if (pToStr.containsKey(pChar) && !pToStr.get(pChar).equals(word)) {
                 return false;
             }
